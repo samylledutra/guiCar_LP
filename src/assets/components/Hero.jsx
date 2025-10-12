@@ -28,7 +28,7 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="absolute top-1/2 left-1/2 w-auto h-full transform -translate-x-1/2 -translate-y-1/3 object-contain z-10 scale-[1.39]"
+          className="absolute top-1/2 left-1/2 w-auto h-full transform -translate-x-1/2 -translate-y-1/2 object-contain z-10 scale-[1.39]"
         />
       </div>
 
