@@ -10,7 +10,7 @@ export default function Hero() {
         backgroundImage: `url(${heroBg})`,
       }}
     >
-      
+
       <div className="absolute inset-0 overflow-hidden max-[375px]:flex hidden items-center justify-center">
         {/* Fundo desfocado */}
         <video
@@ -32,10 +32,11 @@ export default function Hero() {
         />
       </div>
 
-    
+      <div className="absolute inset-0 bg-black/50 z-20 max-[375px]:hidden"></div>
+
       {/* Conteúdo principal */}
       <div className="relative z-30 max-w-2xl text-white px-4 flex flex-col items-center">
-        
+
         <h2 className="uppercase font-extrabold mb-4 leading-tight drop-shadow-xl max-[375px]:hidden">
           <span className="block text-5xl sm:text-6xl tracking-wide text-[#FFD700] drop-shadow-lg">
             GuiCar
@@ -49,7 +50,7 @@ export default function Hero() {
           Devolvemos ao seu carro o visual que ele merece. Resultados que impressionam, para você dirigir com orgulho novamente.
         </p>
 
-      
+
         <a
           href="https://wa.me/55SEUNUMERO?text=Olá! Gostaria de solicitar um orçamento."
           target="_blank"
