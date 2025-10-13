@@ -1,11 +1,17 @@
 import { FaWhatsapp } from "react-icons/fa";
 import logo from "../images/logoGuiCar.png";
+
 export default function Header() {
   return (
-    <header className="bg-gray-900/90 backdrop-blur-md text-white py-1.5  top-0 z-50 shadow-lg transition-all duration-300">
-      <div className="max-w-6xl mx-auto flex justify-between items-center px-4">
+    <header className="bg-gray-900/90 backdrop-blur-md text-white py-1.5 top-0 z-50 shadow-lg transition-all duration-300">
+      <div
+        className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4"
+      >
         {/* LOGO */}
-        <a href="#hero" className="flex items-center">
+        <a
+          href="#hero"
+          className="flex justify-center md:justify-start items-center w-full md:w-auto"
+        >
           <img
             src={logo}
             alt="Guicar Recuperadora"
