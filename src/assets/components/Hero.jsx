@@ -23,20 +23,14 @@ export default function Hero() {
         />
 
         {/* Vídeo principal (vertical) */}
-       <video
-  src={videoBg}
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="
-    absolute left-1/2 w-auto h-full transform 
-    -translate-x-1/2 -translate-y-1/2 object-contain z-10
-    top-[500px] scale-[2.20]
-    max-[345px]:top-[290px] 
-    max-[345px]:scale-[1.2]
-  "
-/>
+        <video
+          src={videoBg}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-[500px] left-1/2 w-auto h-full transform -translate-x-1/2 -translate-y-1/2 object-contain z-10 scale-[2.20]"
+        />
       </div>
 
       {/* Overlay escuro — aparece apenas em telas ≥ 640px */}
