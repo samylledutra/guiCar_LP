@@ -10,9 +10,9 @@ export default function Hero() {
         backgroundImage: `url(${heroBg})`,
       }}
     >
-      {/* 🎥 Vídeo — visível somente em telas menores que 640px */}
+
       <div className="absolute inset-0 overflow-hidden flex items-center justify-center block sm:hidden">
-        {/* Fundo desfocado */}
+
         <video
           src={videoBg}
           autoPlay
@@ -22,7 +22,7 @@ export default function Hero() {
           className="absolute w-full h-full object-cover blur-lg scale-110"
         />
 
-        {/* Vídeo principal (vertical) */}
+
         <video
           src={videoBg}
           autoPlay
@@ -33,10 +33,9 @@ export default function Hero() {
         />
       </div>
 
-      {/* Overlay escuro — aparece apenas em telas ≥ 640px */}
-      <div className="absolute inset-0 bg-black/50 z-20 hidden sm:block"></div>
 
-      {/* Conteúdo principal */}
+      <div className="absolute inset-0 bg-black/80 z-20 hidden sm:block"></div>
+
       <div className="relative z-30 max-w-2xl text-white px-4 flex flex-col items-center">
         {/* Oculta título e texto no mobile */}
         <h2 className="uppercase font-extrabold mb-4 leading-tight drop-shadow-xl hidden sm:block">

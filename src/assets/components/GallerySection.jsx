@@ -62,11 +62,11 @@ export default function GallerySection() {
       : projects.filter((p) => p.category === selectedCategory);
 
   return (
-    <section id="galeria" className="bg-[#ededed] py-20 px-4 relative">
+    <section id="galeria" className="bg-[#0c0c0c] py-20 px-4 relative md:bg-[#f1f1f1] transition-colors duration-500">
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-3xl font-bold mb-3 text-black">Projetos Recentes</h2>
-        <p className="text-gray-500 font-bold max-w-2xl mx-auto">
-          Conheça nossos projetos mais recentes. Cada trabalho reflete a qualidade e atenção aos detalhes da <span className="text-yellow-500 font-semibold">GuiCar Recuperadora</span>.
+        <h2 className="text-3xl font-bold mb-3 text-white md:text-black">Projetos Recentes</h2>
+        <p className="text-[#b9bbbf] font-bold max-w-2xl mx-auto md:text-[#3c3f45]">
+          Conheça nossos projetos mais recentes. Cada trabalho reflete a qualidade e atenção aos detalhes da <span className="text-yellow-400 font-semibold">GuiCar Recuperadora</span>.
         </p>
 
         {/* Filtro */}
@@ -77,7 +77,7 @@ export default function GallerySection() {
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-2 rounded-full font-medium transition ${selectedCategory === cat
                   ? "bg-yellow-500 text-white-500 shadow-md"
-                  : "bg-white text-gray-700 hover:bg-yellow-400 hover:text-white shadow-sm"
+                  : "bg-white text-black hover:bg-yellow-400 hover:text-white shadow-sm"
                 }`}
             >
               {cat}

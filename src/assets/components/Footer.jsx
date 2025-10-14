@@ -1,17 +1,17 @@
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaPhoneAlt, FaClock } from "react-icons/fa";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
-import logo from "../images/logoGuiCar.png"; 
+import logo from "../images/logoGuiCar.png";
 
 export default function Footer() {
   const endereco = "R. Roma, 703 - Tibery, Uberlândia - MG, 38405-076";
   const whatsapp = "5534996532062";
 
   return (
-    <footer className="bg-gray-900 text-white py-16 relative overflow-hidden">
+    <footer className="bg-[#040404] text-white py-16 relative overflow-hidden md:bg-[#05080f] transition-colors duration-500">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
 
-        {/* Sobre */}
+
         <div className="group flex flex-col items-center md:items-start">
           <a href="#hero">
             <img
@@ -20,15 +20,15 @@ export default function Footer() {
               className="w-28 sm:w-32 md:w-36 h-auto mb-4 transition-transform duration-300 hover:scale-105"
             />
           </a>
-          <p className="text-gray-300 text-sm text-justify md:text-left transition duration-300 group-hover:text-gray-200">
+          <p className="text-white text-sm text-justify md:text-left transition duration-300 group-hover:text-white">
             Transformamos veículos com excelência em funilaria, pintura e polimento. Cada carro recebe atenção detalhada e profissionalismo.
           </p>
         </div>
 
-        {/* Contato */}
+
         <div>
           <h4 className="text-2xl font-bold mb-4 text-yellow-400">Contato</h4>
-          <ul className="space-y-4 text-gray-300 text-sm">
+          <ul className="space-y-4 text-white text-sm">
             <li className="flex items-start gap-2 cursor-pointer hover:text-yellow-400 transition">
               <FaMapMarkerAlt className="text-yellow-400 mt-1" />
               <span>{endereco}</span>
@@ -54,7 +54,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Redes sociais + mini mapa */}
+
         <div className="flex flex-col items-center md:items-start gap-4">
           <h4 className="text-2xl font-bold mb-4 text-yellow-400">Redes Sociais</h4>
           <div className="flex items-center gap-4 mb-6">
@@ -74,7 +74,7 @@ export default function Footer() {
             <Tooltip id="waTip" place="top" content="WhatsApp" />
           </div>
 
-          {/* Mini-mapa */}
+
           <div className="w-full md:w-64 h-40 rounded-xl overflow-hidden shadow-xl border-2 border-yellow-400 transition-all duration-500 hover:border-yellow-400">
             <iframe
               title="Mini Mapa GUICAR"
@@ -90,13 +90,11 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Linha inferior */}
-      <div className="mt-12 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+      <div className="mt-12 border-t border-gray-700 pt-6 text-center text-white text-sm">
         &copy; {new Date().getFullYear()} GUICAR Recuperadora. Todos os direitos reservados.
       </div>
 
-      {/* Fundo animado sutil */}
-      <div className="absolute inset-0 bg-yellow-500/5 pointer-events-none animate-pulse-slow"></div>
+
     </footer>
   );
 }

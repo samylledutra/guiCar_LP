@@ -32,7 +32,7 @@ export default function Services() {
     <section id="servicos" className="py-16 bg-[#FFDA1F]">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h3 className="text-3xl sm:text-4xl font-bold mb-12 text-black">
-          Nossos Serviços
+         Soluções Completas em Funilaria e Pintura
         </h3>
 
         <div className="relative">
@@ -71,12 +71,20 @@ export default function Services() {
           </Swiper>
 
           {/* Botões */}
-          <button className="custom-prev absolute top-1/2 -left-6 transform -translate-y-1/2 text-[#ff5c00] text-2xl sm:text-3xl z-10">
+          <button
+            className="custom-prev absolute top-1/2 left-0 sm:-left-6 transform -translate-y-1/2 
+             text-[#ff5c00] text-2xl sm:text-3xl z-10 px-2 sm:px-0 hidden xs:block"
+          >
             ‹
           </button>
-          <button className="custom-next absolute top-1/2 -right-6 transform -translate-y-1/2 text-[#ff5c00] text-2xl sm:text-3xl z-10">
+
+          <button
+            className="custom-next absolute top-1/2 right-0 sm:-right-6 transform -translate-y-1/2 
+             text-[#ff5c00] text-2xl sm:text-3xl z-10 px-2 sm:px-0 hidden xs:block"
+          >
             ›
           </button>
+
         </div>
       </div>
     </section>

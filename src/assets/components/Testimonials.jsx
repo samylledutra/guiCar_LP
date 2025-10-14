@@ -13,7 +13,7 @@ export default function Testimonials() {
   return (
     <section className="py-16 bg-[#FFDA1F]">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h3 className="text-3xl font-bold mb-12 text-black">Depoimentos</h3>
+        <h3 className="text-3xl font-bold mb-12 text-black">A opinião de quem já passou por aqui</h3>
 
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -29,7 +29,7 @@ export default function Testimonials() {
              [&_.swiper-button-next]:!scale-75 [&_.swiper-button-prev]:!scale-75
              [&_.swiper-button-next:hover]:!text-yellow-400 [&_.swiper-button-prev:hover]:!text-yellow-400"
 
-      
+
         >
           {depoimentos.map((d, i) => (
             <SwiperSlide key={i}>
@@ -43,7 +43,7 @@ export default function Testimonials() {
                 <p className="mt-4 font-semibold text-gray-900">- {d.nome}</p>
               </div>
             </SwiperSlide>
-            
+
           ))}
         </Swiper>
       </div>

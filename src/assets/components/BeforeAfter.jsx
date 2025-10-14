@@ -18,10 +18,10 @@ export default function BeforeAfterSection() {
   return (
     <section
       id="antes-depois"
-      className="py-20 bg-gradient-to-b from-gray-100 via-gray-200 to-gray-100"
+      className="py-20 bg-black md:bg-[#e5e5e5] transition-colors duration-500"
     >
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h3 className="text-3xl sm:text-4xl font-bold mb-12 text-black ">
+        <h3 className="text-3xl sm:text-4xl font-bold mb-12 text-white md:text-black">
           Transformações Reais
         </h3>
 
@@ -35,10 +35,10 @@ export default function BeforeAfterSection() {
           <a
             href="#contato"
             className="relative bg-yellow-500 text-black font-semibold py-3 px-10 rounded-full shadow-md overflow-hidden
-             transition-all duration-500 hover:scale-105 hover:shadow-xl"
+             transition-all duration-500 hover:scale-105 hover:shadow-lg"
           >
             <span className="relative z-10">Ver mais resultados</span>
-            <span className="absolute inset-0 bg-gradient-to-r from-yellow-300 via-white to-yellow-200 opacity-0 hover:opacity-40 blur-2xl animate-pulse" />
+            <span className="absolute inset-0 bg-yellow-500 hover:bg-yellow-400 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-[0_0_25px_rgba(255,218,31,0.7)]" />
           </a>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function BeforeAfterSection() {
 function BeforeAfterCard({ antes, depois, titulo }) {
   const [pos, setPos] = useState(50);
 
-  
+
   const active = pos < 50 ? "depois" : "antes";
 
   return (
@@ -69,16 +69,16 @@ function BeforeAfterCard({ antes, depois, titulo }) {
         <div className="absolute bottom-4 left-4 flex gap-3 text-sm sm:text-base font-semibold">
           <span
             className={`px-3 py-1 rounded-md transition-all duration-300 ${active === "antes"
-                ? "bg-[#FFDA1F]/90 text-white"
-                : "bg-black/50 text-white/70"
+              ? "bg-[#FFDA1F]/90 text-white"
+              : "bg-black/50 text-white/70"
               }`}
           >
             Antes
           </span>
           <span
             className={`px-3 py-1 rounded-md transition-all duration-300 ${active === "depois"
-                ? "bg-[#FFDA1F]/90 text-white"
-                : "bg-black/50 text-white/70"
+              ? "bg-[#FFDA1F]/90 text-white"
+              : "bg-black/50 text-white/70"
               }`}
           >
             Depois

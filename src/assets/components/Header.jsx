@@ -3,11 +3,11 @@ import logo from "../images/logoGuiCar.png";
 
 export default function Header() {
   return (
-    <header className="bg-gray-900/90 backdrop-blur-md text-white py-1.5 top-0 z-50 shadow-lg transition-all duration-300">
+    <header className="bg-black backdrop-blur-md text-white py-1.5 top-0 z-50 shadow-lg transition-all duration-300 md:bg-gray-900 transition-colors duration-500">
       <div
         className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4"
       >
-        {/* LOGO */}
+        
         <a
           href="#hero"
           className="flex justify-center md:justify-start items-center w-full md:w-auto"
@@ -19,7 +19,7 @@ export default function Header() {
           />
         </a>
 
-        {/* NAVEGAÇÃO */}
+        
         <nav className="hidden md:flex space-x-6 font-medium">
           <a href="#servicos" className="hover:text-yellow-400 transition-colors">
             Serviços
@@ -32,7 +32,7 @@ export default function Header() {
           </a>
         </nav>
 
-        {/* BOTÃO WHATSAPP */}
+        
         <a
           href="https://wa.me/55SEUNUMERO?text=Olá! Gostaria de um orçamento."
           target="_blank"

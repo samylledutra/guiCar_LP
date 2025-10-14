@@ -11,7 +11,7 @@ import Footer from './assets/components/Footer';
 
 export default function App() {
   return (
-    <div className="overflow-auto no-scrollbar font-sans text-gray-800 w-full h-screen">
+    <div className="overflow-auto no-scrollbar font-sans text-white w-full h-screen">
       <Header />
       <Hero />
       <AboutUs />
